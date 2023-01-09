@@ -1,0 +1,6 @@
+<RCC>
+  <qresource>
+    <file>images/backspace_p.png</file>
+    <file>images/calculate_p.png</file>
+  </qresource>
+</RCC>

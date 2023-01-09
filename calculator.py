@@ -55,7 +55,10 @@ class Calculator(Ui_main_window, QMainWindow):
     
     def change_sign(self):
         if self.answer_line.text():
-            self.answer_line.setText(str(-1 * int(self.answer_line.text())))
+            try:
+                self.answer_line.setText(str(-1 * int(self.answer_line.text())))
+            except:
+                self.answer_line.setText(str(-1 * float(self.answer_line.text())))
     
     def remove(self):
         self.answer_line.setText('0')

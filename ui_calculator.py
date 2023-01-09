@@ -163,15 +163,6 @@ class Ui_main_window(object):
 
         self.gridLayout.addWidget(self.zero_button, 4, 1, 1, 1)
 
-        self.dot_button = QPushButton(self.main_v_layout)
-        self.dot_button.setObjectName(u"dot_button")
-        sizePolicy1.setHeightForWidth(self.dot_button.sizePolicy().hasHeightForWidth())
-        self.dot_button.setSizePolicy(sizePolicy1)
-        self.dot_button.setCursor(QCursor(Qt.PointingHandCursor))
-        self.dot_button.setLayoutDirection(Qt.LeftToRight)
-
-        self.gridLayout.addWidget(self.dot_button, 4, 2, 1, 1)
-
         self.three_button = QPushButton(self.main_v_layout)
         self.three_button.setObjectName(u"three_button")
         sizePolicy1.setHeightForWidth(self.three_button.sizePolicy().hasHeightForWidth())
@@ -267,6 +258,15 @@ class Ui_main_window(object):
 
         self.gridLayout.addWidget(self.minus_button, 2, 3, 1, 1)
 
+        self.dot_button = QPushButton(self.main_v_layout)
+        self.dot_button.setObjectName(u"dot_button")
+        sizePolicy1.setHeightForWidth(self.dot_button.sizePolicy().hasHeightForWidth())
+        self.dot_button.setSizePolicy(sizePolicy1)
+        self.dot_button.setCursor(QCursor(Qt.PointingHandCursor))
+        self.dot_button.setLayoutDirection(Qt.LeftToRight)
+
+        self.gridLayout.addWidget(self.dot_button, 4, 2, 1, 1)
+
 
         self.verticalLayout.addLayout(self.gridLayout)
 
@@ -290,7 +290,6 @@ class Ui_main_window(object):
         self.ch_sign_button.setText(QCoreApplication.translate("main_window", u"+/-", None))
         self.ce_button.setText(QCoreApplication.translate("main_window", u"CE", None))
         self.zero_button.setText(QCoreApplication.translate("main_window", u"0", None))
-        self.dot_button.setText(QCoreApplication.translate("main_window", u".", None))
         self.three_button.setText(QCoreApplication.translate("main_window", u"3", None))
         self.seven_button.setText(QCoreApplication.translate("main_window", u"7", None))
         self.nine_button.setText(QCoreApplication.translate("main_window", u"9", None))
@@ -301,5 +300,6 @@ class Ui_main_window(object):
         self.esc_button.setText("")
         self.two_button.setText(QCoreApplication.translate("main_window", u"2", None))
         self.minus_button.setText(QCoreApplication.translate("main_window", u"-", None))
+        self.dot_button.setText(QCoreApplication.translate("main_window", u".", None))
     # retranslateUi
 
